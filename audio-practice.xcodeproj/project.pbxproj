@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18CE2947E139C41B89279EB3 /* Pods_audio_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8694FB135CB35C4AFAC196AC /* Pods_audio_practice.framework */; };
 		D4419BD322C86971009E0882 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4419BD222C86971009E0882 /* AppDelegate.swift */; };
 		D4419BD522C86971009E0882 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4419BD422C86971009E0882 /* ViewController1.swift */; };
 		D4419BDA22C86974009E0882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4419BD922C86974009E0882 /* Assets.xcassets */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85D751E9780B552588255112 /* Pods-audio-practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-audio-practice.release.xcconfig"; path = "Target Support Files/Pods-audio-practice/Pods-audio-practice.release.xcconfig"; sourceTree = "<group>"; };
+		8694FB135CB35C4AFAC196AC /* Pods_audio_practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_audio_practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4419BCF22C86971009E0882 /* audio-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "audio-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4419BD222C86971009E0882 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4419BD422C86971009E0882 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		D4419BE622C869D2009E0882 /* ohayo02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ohayo02.mp3; sourceTree = "<group>"; };
 		D4419BE722C869D2009E0882 /* ohayo03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ohayo03.mp3; sourceTree = "<group>"; };
 		D4419BEE22C8FCD3009E0882 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		E0232E9FAF2A21E8FC2B42FC /* Pods-audio-practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-audio-practice.debug.xcconfig"; path = "Target Support Files/Pods-audio-practice/Pods-audio-practice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CE2947E139C41B89279EB3 /* Pods_audio_practice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97F91A837A175DC63E9CCDEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8694FB135CB35C4AFAC196AC /* Pods_audio_practice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C38E24EBF0220996BAE039B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0232E9FAF2A21E8FC2B42FC /* Pods-audio-practice.debug.xcconfig */,
+				85D751E9780B552588255112 /* Pods-audio-practice.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D4419BC622C86971009E0882 = {
 			isa = PBXGroup;
 			children = (
 				D4419BD122C86971009E0882 /* audio-practice */,
 				D4419BD022C86971009E0882 /* Products */,
+				C38E24EBF0220996BAE039B1 /* Pods */,
+				97F91A837A175DC63E9CCDEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4419BE122C86974009E0882 /* Build configuration list for PBXNativeTarget "audio-practice" */;
 			buildPhases = (
+				3B8AF4D0A6DE85E77AB3F5D0 /* [CP] Check Pods Manifest.lock */,
 				D4419BCB22C86971009E0882 /* Sources */,
 				D4419BCC22C86971009E0882 /* Frameworks */,
 				D4419BCD22C86971009E0882 /* Resources */,
+				4964B9A41949F3C4A28C6743 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B8AF4D0A6DE85E77AB3F5D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-audio-practice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4964B9A41949F3C4A28C6743 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-audio-practice/Pods-audio-practice-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-audio-practice/Pods-audio-practice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4419BCB22C86971009E0882 /* Sources */ = {
@@ -288,6 +362,7 @@
 		};
 		D4419BE222C86974009E0882 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0232E9FAF2A21E8FC2B42FC /* Pods-audio-practice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +381,7 @@
 		};
 		D4419BE322C86974009E0882 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85D751E9780B552588255112 /* Pods-audio-practice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
