@@ -12,6 +12,10 @@
 		D4419BD822C86971009E0882 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4419BD622C86971009E0882 /* Main.storyboard */; };
 		D4419BDA22C86974009E0882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4419BD922C86974009E0882 /* Assets.xcassets */; };
 		D4419BDD22C86974009E0882 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4419BDB22C86974009E0882 /* LaunchScreen.storyboard */; };
+		D4419BE822C869D2009E0882 /* ohayo01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4419BE422C869D1009E0882 /* ohayo01.mp3 */; };
+		D4419BE922C869D2009E0882 /* ohayo04.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4419BE522C869D2009E0882 /* ohayo04.mp3 */; };
+		D4419BEA22C869D2009E0882 /* ohayo02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4419BE622C869D2009E0882 /* ohayo02.mp3 */; };
+		D4419BEB22C869D2009E0882 /* ohayo03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4419BE722C869D2009E0882 /* ohayo03.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		D4419BD922C86974009E0882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4419BDC22C86974009E0882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4419BDE22C86974009E0882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4419BE422C869D1009E0882 /* ohayo01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ohayo01.mp3; sourceTree = "<group>"; };
+		D4419BE522C869D2009E0882 /* ohayo04.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ohayo04.mp3; sourceTree = "<group>"; };
+		D4419BE622C869D2009E0882 /* ohayo02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ohayo02.mp3; sourceTree = "<group>"; };
+		D4419BE722C869D2009E0882 /* ohayo03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ohayo03.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				D4419BD922C86974009E0882 /* Assets.xcassets */,
 				D4419BDB22C86974009E0882 /* LaunchScreen.storyboard */,
 				D4419BDE22C86974009E0882 /* Info.plist */,
+				D4419BE422C869D1009E0882 /* ohayo01.mp3 */,
+				D4419BE622C869D2009E0882 /* ohayo02.mp3 */,
+				D4419BE722C869D2009E0882 /* ohayo03.mp3 */,
+				D4419BE522C869D2009E0882 /* ohayo04.mp3 */,
 			);
 			path = "audio-practice";
 			sourceTree = "<group>";
@@ -122,8 +134,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4419BE922C869D2009E0882 /* ohayo04.mp3 in Resources */,
+				D4419BEA22C869D2009E0882 /* ohayo02.mp3 in Resources */,
 				D4419BDD22C86974009E0882 /* LaunchScreen.storyboard in Resources */,
 				D4419BDA22C86974009E0882 /* Assets.xcassets in Resources */,
+				D4419BEB22C869D2009E0882 /* ohayo03.mp3 in Resources */,
+				D4419BE822C869D2009E0882 /* ohayo01.mp3 in Resources */,
 				D4419BD822C86971009E0882 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
