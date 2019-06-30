@@ -1,8 +1,8 @@
 //
-//  ViewController2.swift
+//  ViewController3.swift
 //  audio-practice
 //
-//  Created by jinsei_shima on 2019/06/30.
+//  Created by jinsei_shima on 2019/07/01.
 //  Copyright © 2019 jinsei_shima. All rights reserved.
 //
 
@@ -10,21 +10,20 @@ import UIKit
 import AVFoundation
 import EasyPeasy
 
-class ViewController2: UIViewController {
-    
-    private let engine = AVAudioEngine()
-    private let player = AVAudioPlayerNode()
+// Voice recording
+
+class ViewController3: UIViewController {
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
-        title = "Playing with AVAudioEngine"
+        title = "Recording"
 
         view.backgroundColor = .white
-        
+                
         let playButton = UIButton()
-        playButton.setTitle("Play", for: .normal)
+        playButton.setTitle("Start", for: .normal)
         playButton.setTitleColor(.darkText, for: .normal)
         playButton.sizeToFit()
         playButton.isUserInteractionEnabled = true
@@ -57,60 +56,21 @@ class ViewController2: UIViewController {
         playButton.addTarget(self, action: #selector(play), for: .touchUpInside)
         pauseButton.addTarget(self, action: #selector(pause), for: .touchUpInside)
         stopButton.addTarget(self, action: #selector(stop), for: .touchUpInside)
-
         
-        
-        do {
-            
-            let urls = Bundle.main.urls(forResourcesWithExtension: "mp3", subdirectory: nil)
-
-            let audioFiles = try urls?
-                .compactMap { $0 }
-                .map { try AVAudioFile(forReading: $0) }
-            
-            let audioFile = (audioFiles?.first)!
-            
-            engine.attach(player)
-            
-            engine.connect(player, to: engine.mainMixerNode, format: nil)
-            
-            player.scheduleFile(
-                audioFile,
-                at: nil,
-                completionHandler: { [weak self] in
-                    print("player completion")
-                    self?.isAudioFinished = true
-            })
-            
-            engine.prepare()
-            try engine.start()
-            
-        } catch {
-            fatalError("can't find the audio file.")
-        }
         
     }
-
-    var isAudioFinished: Bool = true
-
+    
     @objc func play() {
-        
-//        if isAudioFinished {
-//            player.stop()
-//        }
-        player.reset()
-        player.play()
-        
-        isAudioFinished = false
+    
     }
     
     @objc func pause() {
-        player.pause()
+        
     }
     
     @objc func stop() {
-        player.stop()
+        
     }
     
-
+    
 }
