@@ -68,31 +68,36 @@ class ViewController2: UIViewController {
             
             let audioFile = (audioFiles?.first)!
             
-            player.stop()
-            player.prepareForInterfaceBuilder()
+            engine.attach(player)
+            
+            engine.connect(player, to: engine.mainMixerNode, format: nil)
+            
             player.scheduleFile(
                 audioFile,
-                at: AVAudioTime.init(hostTime: 1),
-                completionHandler: nil
-            )
-            player.play()
+                at: nil,
+                completionHandler: {
+                    print("player completion")
+            })
+            
+            engine.prepare()
+            try engine.start()
             
         } catch {
             fatalError("can't find the audio file.")
         }
         
     }
-    
+
     @objc func play() {
-        
+        player.play()
     }
     
     @objc func pause() {
-
+        player.pause()
     }
     
     @objc func stop() {
-
+        player.stop()
     }
     
 
