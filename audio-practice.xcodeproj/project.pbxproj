@@ -62,7 +62,6 @@
 				E0232E9FAF2A21E8FC2B42FC /* Pods-audio-practice.debug.xcconfig */,
 				85D751E9780B552588255112 /* Pods-audio-practice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
