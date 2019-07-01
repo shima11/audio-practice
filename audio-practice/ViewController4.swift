@@ -1,5 +1,5 @@
 //
-//  ViewController3.swift
+//  ViewController4.swift
 //  audio-practice
 //
 //  Created by jinsei_shima on 2019/07/01.
@@ -10,32 +10,25 @@ import UIKit
 import AVFoundation
 import EasyPeasy
 
-// Voice recording
+// Speech Recognition
 
-// https://github.com/algolia/voice-overlay-ios
-// https://github.com/HassanElDesouky/VoiceMemosClone
+// http://www.cl9.info/entry/2018/01/14/184548
 
-class ViewController3: UIViewController {
+class ViewController4: UIViewController {
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
-        title = "Recording"
-
+        title = "Speech Recognition"
+        
         view.backgroundColor = .white
-                
+        
         let playButton = UIButton()
         playButton.setTitle("Start", for: .normal)
         playButton.setTitleColor(.darkText, for: .normal)
         playButton.sizeToFit()
         playButton.isUserInteractionEnabled = true
-        
-        let pauseButton = UIButton()
-        pauseButton.setTitle("Pause", for: .normal)
-        pauseButton.setTitleColor(.darkText, for: .normal)
-        pauseButton.sizeToFit()
-        pauseButton.isUserInteractionEnabled = true
         
         let stopButton = UIButton()
         stopButton.setTitle("Stop", for: .normal)
@@ -45,7 +38,6 @@ class ViewController3: UIViewController {
         
         let stackView = UIStackView(arrangedSubviews: [
             playButton,
-            pauseButton,
             stopButton
             ])
         stackView.axis = .horizontal
@@ -57,17 +49,12 @@ class ViewController3: UIViewController {
         )
         
         playButton.addTarget(self, action: #selector(play), for: .touchUpInside)
-        pauseButton.addTarget(self, action: #selector(pause), for: .touchUpInside)
         stopButton.addTarget(self, action: #selector(stop), for: .touchUpInside)
         
         
     }
     
     @objc func play() {
-    
-    }
-    
-    @objc func pause() {
         
     }
     

@@ -18,6 +18,7 @@
 		D4419BEB22C869D2009E0882 /* ohayo03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4419BE722C869D2009E0882 /* ohayo03.mp3 */; };
 		D4419BEF22C8FCD3009E0882 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4419BEE22C8FCD3009E0882 /* ViewController2.swift */; };
 		D4419BF522C923DE009E0882 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4419BF422C923DE009E0882 /* ViewController3.swift */; };
+		D4419BF722CA40CC009E0882 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4419BF622CA40CC009E0882 /* ViewController4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D4419BE722C869D2009E0882 /* ohayo03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ohayo03.mp3; sourceTree = "<group>"; };
 		D4419BEE22C8FCD3009E0882 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		D4419BF422C923DE009E0882 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		D4419BF622CA40CC009E0882 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		E0232E9FAF2A21E8FC2B42FC /* Pods-audio-practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-audio-practice.debug.xcconfig"; path = "Target Support Files/Pods-audio-practice/Pods-audio-practice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 				D4419BD422C86971009E0882 /* ViewController1.swift */,
 				D4419BEE22C8FCD3009E0882 /* ViewController2.swift */,
 				D4419BF422C923DE009E0882 /* ViewController3.swift */,
+				D4419BF622CA40CC009E0882 /* ViewController4.swift */,
 				D4419BD922C86974009E0882 /* Assets.xcassets */,
 				D4419BDB22C86974009E0882 /* LaunchScreen.storyboard */,
 				D4419BDE22C86974009E0882 /* Info.plist */,
@@ -230,6 +233,7 @@
 				D4419BD322C86971009E0882 /* AppDelegate.swift in Sources */,
 				D4419BF522C923DE009E0882 /* ViewController3.swift in Sources */,
 				D4419BEF22C8FCD3009E0882 /* ViewController2.swift in Sources */,
+				D4419BF722CA40CC009E0882 /* ViewController4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,9 @@ import UIKit
 import AVFoundation
 import EasyPeasy
 
+// http://tiny-wing.hatenablog.com/entry/2016/05/31/123718
+// https://qiita.com/shingohry/items/9cf67a5ec51102b42c01
+
 class ViewController2: UIViewController {
     
     private let engine = AVAudioEngine()
