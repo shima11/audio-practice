@@ -22,7 +22,7 @@ class ViewController2: UIViewController {
         
         super.viewDidLoad()
         
-        title = "Playing with AVAudioEngine"
+        title = "Playing"
 
         view.backgroundColor = .white
         

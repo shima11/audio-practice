@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h4u-Ly-1OT">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="ZWA-VM-N2n">
+            <objects>
+                <viewController id="kG7-Qy-kYn" customClass="ViewController2" customModule="audio_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cJC-A2-ACz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="IjY-Mm-P3M"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Z3N-SV-yOp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHA-wh-fg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="165"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="kIm-66-iPo">
+            <objects>
+                <viewController id="01D-dK-RQz" customClass="ViewController1" customModule="audio_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hb9-WK-d1T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Msk-Zy-Qgt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="KPf-M0-TAr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbo-cm-xtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="-483"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rmb-3F-hGD">
+            <objects>
+                <tabBarController id="h4u-Ly-1OT" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WL7-zX-OSi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="01D-dK-RQz" kind="relationship" relationship="viewControllers" id="wub-1U-GTB"/>
+                        <segue destination="kG7-Qy-kYn" kind="relationship" relationship="viewControllers" id="hz8-o8-L6z"/>
+                        <segue destination="MdY-kc-JGx" kind="relationship" relationship="viewControllers" id="9J4-sx-jV2"/>
+                        <segue destination="BtE-uL-jdO" kind="relationship" relationship="viewControllers" id="Iyv-Fe-2a2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9SD-Ys-Kj5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-880" y="-159"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="7gW-br-ahE">
+            <objects>
+                <viewController id="MdY-kc-JGx" customClass="ViewController3" customModule="audio_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nB4-ZW-5Qc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bAC-VX-oJT"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Lbo-O1-9Dv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xm5-dc-2RZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Item-->
+        <scene sceneID="ZSw-u2-DR9">
+            <objects>
+                <viewController id="BtE-uL-jdO" customClass="ViewController4" customModule="audio_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FDQ-At-23y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fPU-HU-mef"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="yUi-fd-0yf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QDb-nM-Akl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="1458"/>
+        </scene>
+    </scenes>
+</document>
