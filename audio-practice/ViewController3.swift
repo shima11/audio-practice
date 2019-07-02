@@ -14,8 +14,11 @@ import EasyPeasy
 
 // https://github.com/algolia/voice-overlay-ios
 // https://github.com/HassanElDesouky/VoiceMemosClone
+// https://www.pebblewind.com/entry/2017/09/23/094603
 
 class ViewController3: UIViewController {
+    
+    private let engine = AVAudioEngine()
     
     override func viewDidLoad() {
         
@@ -59,6 +62,21 @@ class ViewController3: UIViewController {
         playButton.addTarget(self, action: #selector(play), for: .touchUpInside)
         pauseButton.addTarget(self, action: #selector(pause), for: .touchUpInside)
         stopButton.addTarget(self, action: #selector(stop), for: .touchUpInside)
+        
+        do {
+            let dir = NSHomeDirectory()
+            let url = URL(string: dir + "/hoge")
+            let outputFile = try AVAudioFile(forWriting: url!, settings: [:])
+            let input = engine.inputNode
+            input.volume = 0
+            input.installTap(onBus: 0, bufferSize: 4096, format: input.inputFormat(forBus: 0), block: { (buffer, when) in
+                print(buffer, when)
+                try! outputFile.write(from: buffer)
+            })
+            
+        } catch {
+            fatalError("can't find the audio file.")
+        }
         
         
     }
